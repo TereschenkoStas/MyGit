@@ -1,0 +1,15 @@
+#cloud-config
+users:
+  - name: admin
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC/Kw8xfqZiMv/OsHVnvZwqZraQ6z9JykVN1GYdjLvzwn5YKn1db/pmOzS3mg0xJnYvUXMwqaO9GXj6hYxum4scQG/Nehw4MgZFTk+IdHSnj6njohKhhcakIgOrbg3g4KqvptIAbnOMEjJNt7viC17ngCi90ll/VEA7NXT5HjYsahImLljXWx5wpKAM58lRxHjS/DcXedE1gG/CUZJ1KixwC+65rqTJSNYVL0rqmpthRiW9oOgPcL/NY0mJd6acQ8tqFBx43CwqkpQZvSSAp3xm9Hhb9NxKkN2SB0RieZ8G7bLll8fDfLGhbMHQQe12zHQZxW8GkLGNdJzCiGF3836FZ9G4ftlrD+sxZ1j/pTK06ma/eNCDxKQRqx5UN3nKCVAhtyx6DS02gegB/Dqn3cUkL3Hcz8cBWFOrnwBH6vDD4rXy2G3fwJElncq39Ffyivuk7+Mw18KZwZLF4T3ZczGfQMlbnlJ+IXniBDGBw7W2nQ2u6gokHINhC+A+mSCVXN8= ste@ste-Aspire-7750G
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCnlVsRO+U+Icv6vni7JQeT2TDMN2DFt58PHnoEKyGkoU3IRrzSRi3uW/bueF7oIGU2FP36NB6hprmmi0iB/5zlmf7KL7w9P7RJJlTIyslaKHZChWh4+cWykgOxh3uIhkO6Mwl0aZ630EyCPZkUuDNU7ZN+8dNVhybkwGyb6DaOIs/3b7lFfCt/leU7cVpQVqdqAKbb5K/CNJpFnIHww5L8bFW/kev6ytM+vTV5XKUrbDhG4oc6DMU6d8VdX0qMymUoh2Ohy5tpiybulAmZJ7gCYcuqaCGyyxSSsrgodNZ4d+Q5g7Ebi92CJum54XaapTo1mZfe4U+xw4oCD3VXzmaH ste@ste-PC
+
+  - name: kby
+    groups: users
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjszCv5vab7oYIpQeDQ+YyvlNZiwrkjaCicbtCRRmoZMSJpesUecfB9gnP5WEvf3oU235u9GqOeOb9cMigvQ2m1whZlpUO4dBhEI0NH4/+pYBd0UxCP3Gif3J1VwhCGr8Lrhz9V9tKaLXRxVfOYoBtN9SiZUyhvNWS2R8MbpA+ahLu9uBGRHHnDYOmqwOk8lDjwTxlTpoQ7uabJGG0pcxwuf69Bz5TO5OM9fT1mig8nmunW82RfbCsumN4gy/M38EijDxR+kN8uWsKf54oi9U0Jtj8aktLmAGaIo5GZU4lOB7BKTRWPXD+u8wYA1EfksZkSNc4os/jZu+pyPceO4MStDqUfrWcJiJmnhZ1/jwQyivL+jR3aCDF93zJ1NV6QQ54SgxqV1bnWw4B3c+ibn3/9MJoRTgIkcXF15nKB7DlXnK3ZyVHKtEFjQHHWrMHLUYn97ZeWSmZl+zgLgys5/flrhRt3f4SjiXtSY2XnQlTDYKFbDZ54XlkS+pbilJY4eMomH+QL3NtPwUXIIPF5qGbyQtdhdQ/nWTrwTl5rpG4BufBqrqKawf3Cxr4cOtC/dDxvjuGweaWDDkYFe7AmZ+wMPNzJbAxFahNwZc/IfNysGw+yz+czxJdGKHQ9z4Vt9aWzQTgHcVKPtNcHdKPnb6pS6/joraxh4aOhI18a0BbBw== kby@kode.ru
