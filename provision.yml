@@ -1,0 +1,54 @@
+# LEMP PLAYBOOK
+---
+- hosts: "all"
+  become: true
+  tasks:
+  - name: Add an Apt signing key, uses whichever key is at the URL
+    ansible.builtin.apt_key:
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
+  - name: Add source repository into sources list
+    ansible.builtin.apt_repository:
+      repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+      state: present
+  - name: "Install apt"
+    apt:
+      name:
+          - software-properties-common
+          - apt-transport-https
+          - qt5-default
+          - qtcreator
+          - code
+          - clang-format
+          - clang-tidy
+          - build-essential
+          - ca-certificates
+          - git
+          - libssl-dev
+          - clang
+          - libc++-dev
+          - libglu1-mesa-dev
+          - qt5-default
+          - cmake
+          - libboost-all-dev
+          - mesa-utils
+          - libtbb2
+          - libtbb-dev
+          - libluabind-dev
+          - lua5.1
+          - osmpbf-bin
+          - libprotobuf-dev
+          - libstxxl-dev
+          - libxml2-dev
+          - libsparsehash-dev
+          - libbz2-dev
+          - zlib1g-dev
+          - libzip-dev
+          - liblua5.1-0-dev
+          - pkg-config
+          - libgdal-dev
+          - libexpat1-dev
+          - libosmpbf-dev
+          - python2
+          - libqt5svg5-dev
+      state: latest

@@ -1,0 +1,25 @@
+В файле креды чтоб под рукой были, понятно что на рабочей машине в папке проекта их нет
+
+access_key:
+  id: ajej4vk35h0pcs5tddfn
+  service_account_id: ajetmou5edvcmukf3c3s
+  created_at: "2022-08-08T11:53:08.198704262Z"
+  key_id: YCAJEECb5yXWsbqvhRg-xNtLk 
+secret: YCMjwuIA_h4YhkIF_JT38DuXZWCimZzXNnErJzg2 
+
+
+# variable "token" {
+  #  type = string
+  #  default = "AQAEA7qkE2TmAATuwaQO3er_sUFou7W7lIMAw30"
+#}
+
+#variable "cloud_id" {
+  #  type    = string
+  #  default = "b1gnc17pq33nftpt5t8l"
+#}
+
+
+#variable "folder_id" {
+  #  type    = string
+  #  default = "b1gtg9fa37qgkie7grlp"
+#}
